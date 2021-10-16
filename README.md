@@ -3,243 +3,243 @@ Documenting system information classes and their uses
 
 ## System Information classes support in NtSet vs. NtQuery APIs:
 
-| Information Class | NtSetSystemInformation  | NtQuerySystemInformation  |
+| Information Class | NtSetSystemInformation  | NtQuerySystemInformation  | NtQuerySystemInformationEx |
 | ------- | --- | --- |
-| SystemBasicInformation | Invalid | Valid |
-| SystemProcessorInformation | Invalid | Valid |
-| SystemPerformanceInformation | Invalid | Valid |
-| SystemTimeOfDayInformation | Invalid | Valid |
-| SystemPathInformation | Invalid | Not implemented |
-| SystemProcessInformation | Invalid | Valid |
-| SystemCallCountInformation | Invalid | Valid |
-| SystemDeviceInformation | Invalid | Valid |
-| SystemProcessorPerformanceInformation | Invalid | Valid |
-| SystemFlagsInformation | Valid | Valid |
-| SystemCallTimeInformation | Invalid | Not implemented |
-| SystemModuleInformation | Invalid | Valid |
-| SystemLocksInformation | Invalid | Valid |
-| SystemStackTraceInformation | Invalid | Valid |
-| SystemPagedPoolInformation | Invalid | Not implemented |
-| SystemNonPagedPoolInformation | Invalid | Not implemented |
-| SystemHandleInformation | Invalid | Valid |
-| SystemObjectInformation | Invalid | Valid |
-| SystemPageFileInformation | Invalid | Valid |
-| SystemVdmInstemulInformation | Invalid | Not implemented |
-| SystemVdmBopInformation | Invalid | Invalid |
-| SystemFileCacheInformation | Valid | Valid |
-| SystemPoolTagInformation | Invalid | Valid |
-| SystemInterruptInformation | Invalid | Valid |
-| SystemDpcBehaviorInformation | Valid | Valid |
-| SystemFullMemoryInformation | Invalid | Not implemented |
-| SystemLoadGdiDriverInformation | Valid | Invalid |
-| SystemUnloadGdiDriverInformation | Valid | Invalid |
-| SystemTimeAdjustmentInformation | Valid | Valid |
-| SystemSummaryMemoryInformation | Invalid | Not implemented |
-| SystemMirrorMemoryInformation | Valid | Invalid |
-| SystemPerformanceTraceInformation | Not implemented | Not implemented |
-| SystemObsolete0 | Invalid | Invalid |
-| SystemExceptionInformation | Invalid | Valid |
-| SystemCrashDumpStateInformation | Valid | Invalid |
-| SystemKernelDebuggerInformation | Invalid | Valid |
-| SystemContextSwitchInformation | Invalid | Valid |
-| SystemRegistryQuotaInformation | Valid | Valid |
-| SystemExtendServiceTableInformation | Valid | Invalid |
-| SystemPrioritySeperation | Valid | Invalid |
-| SystemVerifierAddDriverInformation | Valid | Invalid |
-| SystemVerifierRemoveDriverInformation | Valid | Invalid |
-| SystemProcessorIdleInformation | Invalid | Valid |
-| SystemLegacyDriverInformation | Invalid | Valid |
-| SystemCurrentTimeZoneInformation | Invalid | Valid |
-| SystemLookasideInformation | Invalid | Valid |
-| SystemTimeSlipNotification | Valid | Invalid |
-| SystemSessionCreate | Not implemented | Invalid |
-| SystemSessionDetach | Not implemented | Invalid |
-| SystemSessionInformation | Invalid | Invalid |
-| SystemRangeStartInformation | Invalid | Valid |
-| SystemVerifierInformation | Valid | Valid |
-| SystemVerifierThunkExtend | Valid | Invalid |
-| SystemSessionProcessInformation | Invalid | Valid |
-| SystemLoadGdiDriverInSystemSpace | Valid | Invalid |
-| SystemNumaProcessorMap | Invalid | Valid |
-| SystemPrefetcherInformation | Valid | Valid |
-| SystemExtendedProcessInformation | Invalid | Valid |
-| SystemRecommendedSharedDataAlignment | Invalid | Valid |
-| SystemComPlusPackage | Valid | Valid |
-| SystemNumaAvailableMemory | Invalid | Valid |
-| SystemProcessorPowerInformation | Invalid | Valid |
-| SystemEmulationBasicInformation | Invalid | Valid |
-| SystemEmulationProcessorInformation | Invalid | Valid |
-| SystemExtendedHandleInformation | Invalid | Valid |
-| SystemLostDelayedWriteInformation | Invalid | Valid |
-| SystemBigPoolInformation | Invalid | Valid |
-| SystemSessionPoolTagInformation | Invalid | Valid |
-| SystemSessionMappedViewInformation | Invalid | Valid |
-| SystemHotpatchInformation | Valid | Valid |
-| SystemObjectSecurityMode | Invalid | Valid |
-| SystemWatchdogTimerHandler | Valid | Invalid |
-| SystemWatchdogTimerInformation | Valid | Valid |
-| SystemLogicalProcessorInformation | Invalid | Valid |
-| SystemWow64SharedInformationObsolete | Not implemented | Invalid |
-| SystemRegisterFirmwareTableInformationHandler | Valid | Invalid |
-| SystemFirmwareTableInformation | Invalid | Valid |
-| SystemModuleInformationEx | Invalid | Valid |
-| SystemVerifierTriageInformation | Invalid | Invalid |
-| SystemSuperfetchInformation | Valid | Valid |
-| SystemMemoryListInformation | Valid | Valid |
-| SystemFileCacheInformationEx | Valid | Valid |
-| SystemThreadPriorityClientIdInformation | Valid | Invalid |
-| SystemProcessorIdleCycleTimeInformation | Invalid | Valid |
-| SystemVerifierCancellationInformation | Invalid | Invalid |
-| SystemProcessorPowerInformationEx | Invalid | Invalid |
-| SystemRefTraceInformation | Valid | Valid |
-| SystemSpecialPoolInformation | Valid | Valid |
-| SystemProcessIdInformation | Invalid | Valid |
-| SystemErrorPortInformation | Valid | Invalid |
-| SystemBootEnvironmentInformation | Invalid | Valid |
-| SystemHypervisorInformation | Valid | Valid |
-| SystemVerifierInformationEx | Valid | Valid |
-| SystemTimeZoneInformation | Valid | Invalid |
-| SystemImageFileExecutionOptionsInformation | Valid | Invalid |
-| SystemCoverageInformation | Valid | Valid |
-| SystemPrefetchPatchInformation | Invalid | Not implemented |
-| SystemVerifierFaultsInformation | Valid | Invalid |
-| SystemSystemPartitionInformation | Invalid | Valid |
-| SystemSystemDiskInformation | Invalid | Valid |
-| SystemProcessorPerformanceDistribution | Invalid | Valid |
-| SystemNumaProximityNodeInformation | Invalid | Valid |
-| SystemDynamicTimeZoneInformation | Valid | Valid |
-| SystemCodeIntegrityInformation | Invalid | Valid |
-| SystemProcessorMicrocodeUpdateInformation | Valid | Invalid |
-| SystemProcessorBrandString | Invalid | Valid |
-| SystemVirtualAddressInformation | Invalid | Invalid |
-| SystemLogicalProcessorAndGroupInformation | Invalid | Invalid |
-| SystemProcessorCycleTimeInformation | Invalid | Valid |
-| SystemStoreInformation | Valid | Valid |
-| SystemRegistryAppendString | Not implemented | Invalid |
-| SystemAitSamplingValue | Valid | Invalid |
-| SystemVhdBootInformation | Invalid | Valid |
-| SystemCpuQuotaInformation | Valid | Valid |
-| SystemNativeBasicInformation | Invalid | Valid |
-| SystemErrorPortTimeouts | Invalid | Valid |
-| SystemLowPriorityIoInformation | Invalid | Valid |
-| SystemBootEntropyInformation | Invalid | Valid |
-| SystemVerifierCountersInformation | Invalid | Valid |
-| SystemPagedPoolInformationEx | Invalid | Valid |
-| SystemSystemPtesInformationEx | Invalid | Valid |
-| SystemNodeDistanceInformation | Invalid | Invalid |
-| SystemAcpiAuditInformation | Invalid | Valid |
-| SystemBasicPerformanceInformation | Invalid | Valid |
-| SystemQueryPerformanceCounterInformation | Invalid | Valid |
-| SystemSessionBigPoolInformation | Invalid | Valid |
-| SystemBootGraphicsInformation | Valid | Valid |
-| SystemScrubPhysicalMemoryInformation | Valid | Invalid |
-| SystemBadPageInformation | Invalid | Valid |
-| SystemProcessorProfileControlArea | Valid | Invalid |
-| SystemCombinePhysicalMemoryInformation | Valid | Invalid |
-| SystemEntropyInterruptTimingInformation | Valid | Invalid |
-| SystemConsoleInformation | Valid | Invalid |
-| SystemPlatformBinaryInformation | Invalid | Valid |
-| SystemPolicyInformation | Valid | Valid |
-| SystemHypervisorProcessorCountInformation | Invalid | Valid |
-| SystemDeviceDataInformation | Invalid | Valid |
-| SystemDeviceDataEnumerationInformation | Invalid | Valid |
-| SystemMemoryTopologyInformation | Invalid | Valid |
-| SystemMemoryChannelInformation | Invalid | Valid |
-| SystemBootLogoInformation | Invalid | Valid |
-| SystemProcessorPerformanceInformationEx | Invalid | Valid |
-| SystemCriticalProcessErrorLogInformation | Valid | Invalid |
-| SystemSecureBootPolicyInformation | Invalid | Valid |
-| SystemPageFileInformationEx | Invalid | Valid |
-| SystemSecureBootInformation | Invalid | Valid |
-| SystemEntropyInterruptTimingRawInformation | Invalid | Invalid |
-| SystemPortableWorkspaceEfiLauncherInformation | Invalid | Valid |
-| SystemFullProcessInformation | Invalid | Valid |
-| SystemKernelDebuggerInformationEx | Invalid | Valid |
-| SystemBootMetadataInformation | Valid | Valid |
-| SystemSoftRebootInformation | Valid | Valid |
-| SystemElamCertificateInformation | Valid | Invalid |
-| SystemOfflineDumpConfigInformation | Invalid | Valid |
-| SystemProcessorFeaturesInformation | Invalid | Valid |
-| SystemRegistryReconciliationInformation | Valid | Invalid |
-| SystemEdidInformation | Invalid | Valid |
-| SystemManufacturingInformation | Invalid | Valid |
-| SystemEnergyEstimationConfigInformation | Invalid | Valid |
-| SystemHypervisorDetailInformation | Valid | Valid |
-| SystemProcessorCycleStatsInformation | Invalid | Valid |
-| SystemVmGenerationCountInformation | Valid | Invalid |
-| SystemTrustedPlatformModuleInformation | Invalid | Valid |
-| SystemKernelDebuggerFlags | Invalid | Valid |
-| SystemCodeIntegrityPolicyInformation | Valid | Valid |
-| SystemIsolatedUserModeInformation | Invalid | Valid |
-| SystemHardwareSecurityTestInterfaceResultsInformation | Invalid | Valid |
-| SystemSingleModuleInformation | Invalid | Valid |
-| SystemAllowedCpuSetsInformation | Valid | Invalid |
-| SystemVsmProtectionInformation | Invalid | Valid |
-| SystemInterruptCpuSetsInformation | Valid | Invalid |
-| SystemSecureBootPolicyFullInformation | Invalid | Valid |
-| SystemCodeIntegrityPolicyFullInformation | Invalid | Valid |
-| SystemAffinitizedInterruptProcessorInformation | Invalid | Valid |
-| SystemRootSiloInformation | Invalid | Valid |
-| SystemCpuSetInformation | Invalid | Valid |
-| SystemCpuSetTagInformation | Valid | Invalid |
-| SystemWin32WerStartCallout | Valid | Invalid |
-| SystemSecureKernelProfileInformation | Invalid | Valid |
-| SystemCodeIntegrityPlatformManifestInformation | Invalid | Valid |
-| SystemInterruptSteeringInformation | Invalid | Invalid |
-| SystemSupportedProcessorArchitectures | Invalid | Valid |
-| SystemMemoryUsageInformation | Invalid | Valid |
-| SystemCodeIntegrityCertificateInformation | Invalid | Valid |
-| SystemPhysicalMemoryInformation | Invalid | Valid |
-| SystemControlFlowTransition | Invalid | Valid |
-| SystemKernelDebuggingAllowed | Invalid | Valid |
-| SystemActivityModerationExeState | Valid | Invalid |
-| SystemActivityModerationUserSettings | Invalid | Valid |
-| SystemCodeIntegrityPoliciesFullInformation | Invalid | Valid |
-| SystemCodeIntegrityUnlockInformation | Valid | Valid |
-| SystemIntegrityQuotaInformation | Valid | Invalid |
-| SystemFlushInformation | Invalid | Valid |
-| SystemProcessorIdleMaskInformation | Invalid | Valid |
-| SystemSecureDumpEncryptionInformation | Valid | Valid |
-| SystemWriteConstraintInformation | Invalid | Valid |
-| SystemKernelVaShadowInformation | Invalid | Valid |
-| SystemHypervisorSharedPageInformation | Invalid | Valid |
-| SystemFirmwareBootPerformanceInformation | Invalid | Valid |
-| SystemCodeIntegrityVerificationInformation | Valid | Valid |
-| SystemFirmwarePartitionInformation | Invalid | Valid |
-| SystemSpeculationControlInformation | Invalid | Valid |
-| SystemDmaGuardPolicyInformation | Invalid | Valid |
-| SystemEnclaveLaunchControlInformation | Invalid | Invalid |
-| SystemWorkloadAllowedCpuSetsInformation | Valid | Invalid |
-| SystemCodeIntegrityUnlockModeInformation | Invalid | Invalid |
-| SystemLeapSecondInformation | Valid | Valid |
-| SystemFlags2Information | Valid | Valid |
-| SystemSecurityModelInformation | Invalid | Valid |
-| SystemCodeIntegritySyntheticCacheInformation | Invalid | Valid |
-| SystemFeatureConfigurationInformation | Valid | Invalid |
-| SystemFeatureConfigurationSectionInformation | Invalid | Invalid |
-| SystemFeatureUsageSubscriptionInformation | Valid | Invalid |
-| SystemSecureSpeculationControlInformation | Invalid | Valid |
-| SystemSpacesBootInformation | Invalid | Valid |
-| SystemFwRamdiskInformation | Invalid | Valid |
-| SystemWheaIpmiHardwareInformation | Invalid | Valid |
-| SystemDifSetRuleClassInformation | Valid | Invalid |
-| SystemDifClearRuleClassInformation | Valid | Invalid |
-| SystemDifApplyPluginVerificationOnDriver | Valid | Invalid |
-| SystemDifRemovePluginVerificationOnDriver | Valid | Invalid |
-| SystemShadowStackInformation | Invalid | Valid |
-| SystemBuildVersionInformation | Invalid | Invalid |
-| SystemPoolLimitInformation | Valid | Invalid |
-| SystemCodeIntegrityAddDynamicStore | Valid | Invalid |
-| SystemCodeIntegrityClearDynamicStores | Valid | Invalid |
-| SystemDifPoolTrackingInformation | Valid | Invalid |
-| SystemPoolZeroingInformation | Invalid | Valid |
-| SystemDpcWatchdogInformation | Valid | Valid |
-| SystemDpcWatchdogInformation2 | Valid | Valid |
-| SystemSupportedProcessorArchitectures2 | Invalid | Valid |
-| SystemSingleProcessorRelationshipInformation | Invalid | Invalid |
-| SystemXfgCheckFailureInformation | Invalid | Valid |
-| SystemIommuStateInformation | Valid | Invalid |
-| SystemHypervisorMinrootInformation | Invalid | Valid |
-| SystemHypervisorBootPagesInformation | Valid | Invalid |
-| SystemPointerAuthInformation | Invalid | Valid |
-| SystemSecureKernelDebuggerInformation | Invalid | Valid
+| SystemBasicInformation | Invalid | Valid | Invalid |
+| SystemProcessorInformation | Invalid | Valid | Invalid |
+| SystemPerformanceInformation | Invalid | Valid | Invalid |
+| SystemTimeOfDayInformation | Invalid | Valid | Invalid |
+| SystemPathInformation | Invalid | Not implemented | Invalid |
+| SystemProcessInformation | Invalid | Valid | Invalid |
+| SystemCallCountInformation | Invalid | Valid | Invalid |
+| SystemDeviceInformation | Invalid | Valid | Invalid |
+| SystemProcessorPerformanceInformation | Invalid | Valid | Valid |
+| SystemFlagsInformation | Valid | Valid | Invalid |
+| SystemCallTimeInformation | Invalid | Not implemented | Invalid |
+| SystemModuleInformation | Invalid | Valid | Invalid |
+| SystemLocksInformation | Invalid | Valid | Invalid |
+| SystemStackTraceInformation | Invalid | Valid | Invalid |
+| SystemPagedPoolInformation | Invalid | Not implemented | Invalid |
+| SystemNonPagedPoolInformation | Invalid | Not implemented | Invalid |
+| SystemHandleInformation | Invalid | Valid | Invalid |
+| SystemObjectInformation | Invalid | Valid | Invalid |
+| SystemPageFileInformation | Invalid | Valid | Invalid |
+| SystemVdmInstemulInformation | Invalid | Not implemented | Invalid |
+| SystemVdmBopInformation | Invalid | Invalid | Invalid |
+| SystemFileCacheInformation | Valid | Valid | Invalid |
+| SystemPoolTagInformation | Invalid | Valid | Invalid |
+| SystemInterruptInformation | Invalid | Valid | Valid |
+| SystemDpcBehaviorInformation | Valid | Valid | Invalid |
+| SystemFullMemoryInformation | Invalid | Not implemented | Invalid |
+| SystemLoadGdiDriverInformation | Valid | Invalid | Invalid |
+| SystemUnloadGdiDriverInformation | Valid | Invalid | Invalid |
+| SystemTimeAdjustmentInformation | Valid | Valid | Invalid |
+| SystemSummaryMemoryInformation | Invalid | Not implemented | Invalid |
+| SystemMirrorMemoryInformation | Valid | Invalid | Invalid |
+| SystemPerformanceTraceInformation | Not implemented | Not implemented | Invalid |
+| SystemObsolete0 | Invalid | Invalid | Invalid |
+| SystemExceptionInformation | Invalid | Valid | Invalid |
+| SystemCrashDumpStateInformation | Valid | Invalid | Invalid |
+| SystemKernelDebuggerInformation | Invalid | Valid | Invalid |
+| SystemContextSwitchInformation | Invalid | Valid | Invalid |
+| SystemRegistryQuotaInformation | Valid | Valid | Invalid |
+| SystemExtendServiceTableInformation | Valid | Invalid | Invalid |
+| SystemPrioritySeperation | Valid | Invalid | Invalid |
+| SystemVerifierAddDriverInformation | Valid | Invalid | Invalid |
+| SystemVerifierRemoveDriverInformation | Valid | Invalid | Invalid |
+| SystemProcessorIdleInformation | Invalid | Valid | Valid |
+| SystemLegacyDriverInformation | Invalid | Valid | Invalid |
+| SystemCurrentTimeZoneInformation | Invalid | Valid | Invalid |
+| SystemLookasideInformation | Invalid | Valid | Invalid |
+| SystemTimeSlipNotification | Valid | Invalid | Invalid |
+| SystemSessionCreate | Not implemented | Invalid | Invalid |
+| SystemSessionDetach | Not implemented | Invalid | Invalid |
+| SystemSessionInformation | Invalid | Invalid | Invalid |
+| SystemRangeStartInformation | Invalid | Valid | Invalid |
+| SystemVerifierInformation | Valid | Valid | Invalid |
+| SystemVerifierThunkExtend | Valid | Invalid | Invalid |
+| SystemSessionProcessInformation | Invalid | Valid | Invalid |
+| SystemLoadGdiDriverInSystemSpace | Valid | Invalid | Invalid |
+| SystemNumaProcessorMap | Invalid | Valid | Invalid |
+| SystemPrefetcherInformation | Valid | Valid | Invalid |
+| SystemExtendedProcessInformation | Invalid | Valid | Invalid |
+| SystemRecommendedSharedDataAlignment | Invalid | Valid | Invalid |
+| SystemComPlusPackage | Valid | Valid | Invalid |
+| SystemNumaAvailableMemory | Invalid | Valid | Invalid |
+| SystemProcessorPowerInformation | Invalid | Valid | Valid |
+| SystemEmulationBasicInformation | Invalid | Valid | Invalid |
+| SystemEmulationProcessorInformation | Invalid | Valid | Invalid |
+| SystemExtendedHandleInformation | Invalid | Valid | Invalid |
+| SystemLostDelayedWriteInformation | Invalid | Valid | Invalid |
+| SystemBigPoolInformation | Invalid | Valid | Invalid |
+| SystemSessionPoolTagInformation | Invalid | Valid | Invalid |
+| SystemSessionMappedViewInformation | Invalid | Valid | Invalid |
+| SystemHotpatchInformation | Valid | Valid | Invalid |
+| SystemObjectSecurityMode | Invalid | Valid | Invalid |
+| SystemWatchdogTimerHandler | Valid | Invalid | Invalid |
+| SystemWatchdogTimerInformation | Valid | Valid | Invalid |
+| SystemLogicalProcessorInformation | Invalid | Valid | Invalid |
+| SystemWow64SharedInformationObsolete | Not implemented | Invalid | Invalid |
+| SystemRegisterFirmwareTableInformationHandler | Valid | Invalid | Invalid |
+| SystemFirmwareTableInformation | Invalid | Valid | Invalid |
+| SystemModuleInformationEx | Invalid | Valid | Invalid |
+| SystemVerifierTriageInformation | Invalid | Invalid | Invalid |
+| SystemSuperfetchInformation | Valid | Valid | Invalid |
+| SystemMemoryListInformation | Valid | Valid | Invalid |
+| SystemFileCacheInformationEx | Valid | Valid | Invalid |
+| SystemThreadPriorityClientIdInformation | Valid | Invalid | Invalid |
+| SystemProcessorIdleCycleTimeInformation | Invalid | Valid | Valid |
+| SystemVerifierCancellationInformation | Invalid | Invalid | Invalid |
+| SystemProcessorPowerInformationEx | Invalid | Invalid | Invalid |
+| SystemRefTraceInformation | Valid | Valid | Invalid |
+| SystemSpecialPoolInformation | Valid | Valid | Invalid |
+| SystemProcessIdInformation | Invalid | Valid | Invalid |
+| SystemErrorPortInformation | Valid | Invalid | Invalid |
+| SystemBootEnvironmentInformation | Invalid | Valid | Invalid |
+| SystemHypervisorInformation | Valid | Valid | Invalid |
+| SystemVerifierInformationEx | Valid | Valid | Invalid |
+| SystemTimeZoneInformation | Valid | Invalid | Invalid |
+| SystemImageFileExecutionOptionsInformation | Valid | Invalid | Invalid |
+| SystemCoverageInformation | Valid | Valid | Invalid |
+| SystemPrefetchPatchInformation | Invalid | Not implemented | Invalid |
+| SystemVerifierFaultsInformation | Valid | Invalid | Invalid |
+| SystemSystemPartitionInformation | Invalid | Valid | Invalid |
+| SystemSystemDiskInformation | Invalid | Valid | Invalid |
+| SystemProcessorPerformanceDistribution | Invalid | Valid | Valid |
+| SystemNumaProximityNodeInformation | Invalid | Valid | Invalid |
+| SystemDynamicTimeZoneInformation | Valid | Valid | Invalid |
+| SystemCodeIntegrityInformation | Invalid | Valid | Invalid |
+| SystemProcessorMicrocodeUpdateInformation | Valid | Invalid | Invalid |
+| SystemProcessorBrandString | Invalid | Valid | Invalid |
+| SystemVirtualAddressInformation | Invalid | Invalid | Invalid |
+| SystemLogicalProcessorAndGroupInformation | Invalid | Invalid | Valid |
+| SystemProcessorCycleTimeInformation | Invalid | Valid | Valid |
+| SystemStoreInformation | Valid | Valid | Invalid |
+| SystemRegistryAppendString | Not implemented | Invalid | Invalid |
+| SystemAitSamplingValue | Valid | Invalid | Invalid |
+| SystemVhdBootInformation | Invalid | Valid | Invalid |
+| SystemCpuQuotaInformation | Valid | Valid | Invalid |
+| SystemNativeBasicInformation | Invalid | Valid | Invalid |
+| SystemErrorPortTimeouts | Invalid | Valid | Invalid |
+| SystemLowPriorityIoInformation | Invalid | Valid | Invalid |
+| SystemBootEntropyInformation | Invalid | Valid | Invalid |
+| SystemVerifierCountersInformation | Invalid | Valid | Invalid |
+| SystemPagedPoolInformationEx | Invalid | Valid | Invalid |
+| SystemSystemPtesInformationEx | Invalid | Valid | Invalid |
+| SystemNodeDistanceInformation | Invalid | Invalid | Valid |
+| SystemAcpiAuditInformation | Invalid | Valid | Invalid |
+| SystemBasicPerformanceInformation | Invalid | Valid | Invalid |
+| SystemQueryPerformanceCounterInformation | Invalid | Valid | Invalid |
+| SystemSessionBigPoolInformation | Invalid | Valid | Invalid |
+| SystemBootGraphicsInformation | Valid | Valid | Invalid |
+| SystemScrubPhysicalMemoryInformation | Valid | Invalid | Invalid |
+| SystemBadPageInformation | Invalid | Valid | Invalid |
+| SystemProcessorProfileControlArea | Valid | Invalid | Invalid |
+| SystemCombinePhysicalMemoryInformation | Valid | Invalid | Invalid |
+| SystemEntropyInterruptTimingInformation | Valid | Invalid | Invalid |
+| SystemConsoleInformation | Valid | Invalid | Invalid |
+| SystemPlatformBinaryInformation | Invalid | Valid | Invalid |
+| SystemPolicyInformation | Valid | Valid | Invalid |
+| SystemHypervisorProcessorCountInformation | Invalid | Valid | Invalid |
+| SystemDeviceDataInformation | Invalid | Valid | Invalid |
+| SystemDeviceDataEnumerationInformation | Invalid | Valid | Invalid |
+| SystemMemoryTopologyInformation | Invalid | Valid | Invalid |
+| SystemMemoryChannelInformation | Invalid | Valid | Invalid |
+| SystemBootLogoInformation | Invalid | Valid | Invalid |
+| SystemProcessorPerformanceInformationEx | Invalid | Valid | Valid |
+| SystemCriticalProcessErrorLogInformation | Valid | Invalid | Invalid |
+| SystemSecureBootPolicyInformation | Invalid | Valid | Invalid |
+| SystemPageFileInformationEx | Invalid | Valid | Invalid |
+| SystemSecureBootInformation | Invalid | Valid | Invalid |
+| SystemEntropyInterruptTimingRawInformation | Invalid | Invalid | Invalid |
+| SystemPortableWorkspaceEfiLauncherInformation | Invalid | Valid | Invalid |
+| SystemFullProcessInformation | Invalid | Valid | Invalid |
+| SystemKernelDebuggerInformationEx | Invalid | Valid | Invalid |
+| SystemBootMetadataInformation | Valid | Valid | Invalid |
+| SystemSoftRebootInformation | Valid | Valid | Invalid |
+| SystemElamCertificateInformation | Valid | Invalid | Invalid |
+| SystemOfflineDumpConfigInformation | Invalid | Valid | Invalid |
+| SystemProcessorFeaturesInformation | Invalid | Valid | Invalid |
+| SystemRegistryReconciliationInformation | Valid | Invalid | Invalid |
+| SystemEdidInformation | Invalid | Valid | Invalid |
+| SystemManufacturingInformation | Invalid | Valid | Invalid |
+| SystemEnergyEstimationConfigInformation | Invalid | Valid | Invalid |
+| SystemHypervisorDetailInformation | Valid | Valid | Invalid |
+| SystemProcessorCycleStatsInformation | Invalid | Valid | Valid |
+| SystemVmGenerationCountInformation | Valid | Invalid | Invalid |
+| SystemTrustedPlatformModuleInformation | Invalid | Valid | Invalid |
+| SystemKernelDebuggerFlags | Invalid | Valid | Invalid |
+| SystemCodeIntegrityPolicyInformation | Valid | Valid | Invalid |
+| SystemIsolatedUserModeInformation | Invalid | Valid | Valid |
+| SystemHardwareSecurityTestInterfaceResultsInformation | Invalid | Valid | Invalid |
+| SystemSingleModuleInformation | Invalid | Valid | Invalid |
+| SystemAllowedCpuSetsInformation | Valid | Invalid | Invalid |
+| SystemVsmProtectionInformation | Invalid | Valid | Invalid |
+| SystemInterruptCpuSetsInformation | Valid | Invalid | Invalid |
+| SystemSecureBootPolicyFullInformation | Invalid | Valid | Invalid |
+| SystemCodeIntegrityPolicyFullInformation | Invalid | Valid | Invalid |
+| SystemAffinitizedInterruptProcessorInformation | Invalid | Valid | Invalid |
+| SystemRootSiloInformation | Invalid | Valid | Invalid |
+| SystemCpuSetInformation | Invalid | Valid | Valid |
+| SystemCpuSetTagInformation | Valid | Invalid | Invalid |
+| SystemWin32WerStartCallout | Valid | Invalid | Invalid |
+| SystemSecureKernelProfileInformation | Invalid | Valid | Valid |
+| SystemCodeIntegrityPlatformManifestInformation | Invalid | Valid | Invalid |
+| SystemInterruptSteeringInformation | Invalid | Invalid | Valid |
+| SystemSupportedProcessorArchitectures | Invalid | Valid | Valid |
+| SystemMemoryUsageInformation | Invalid | Valid | Invalid |
+| SystemCodeIntegrityCertificateInformation | Invalid | Valid | Invalid |
+| SystemPhysicalMemoryInformation | Invalid | Valid | Invalid |
+| SystemControlFlowTransition | Invalid | Valid | Invalid |
+| SystemKernelDebuggingAllowed | Invalid | Valid | Invalid |
+| SystemActivityModerationExeState | Valid | Invalid | Invalid |
+| SystemActivityModerationUserSettings | Invalid | Valid | Invalid |
+| SystemCodeIntegrityPoliciesFullInformation | Invalid | Valid | Invalid |
+| SystemCodeIntegrityUnlockInformation | Valid | Valid | Invalid |
+| SystemIntegrityQuotaInformation | Valid | Invalid | Invalid |
+| SystemFlushInformation | Invalid | Valid | Invalid |
+| SystemProcessorIdleMaskInformation | Invalid | Valid | Invalid |
+| SystemSecureDumpEncryptionInformation | Valid | Valid | Valid |
+| SystemWriteConstraintInformation | Invalid | Valid | Invalid |
+| SystemKernelVaShadowInformation | Invalid | Valid | Invalid |
+| SystemHypervisorSharedPageInformation | Invalid | Valid | Invalid |
+| SystemFirmwareBootPerformanceInformation | Invalid | Valid | Invalid |
+| SystemCodeIntegrityVerificationInformation | Valid | Valid | Invalid |
+| SystemFirmwarePartitionInformation | Invalid | Valid | Invalid |
+| SystemSpeculationControlInformation | Invalid | Valid | Invalid |
+| SystemDmaGuardPolicyInformation | Invalid | Valid | Invalid |
+| SystemEnclaveLaunchControlInformation | Invalid | Invalid | Invalid |
+| SystemWorkloadAllowedCpuSetsInformation | Valid | Invalid | Invalid |
+| SystemCodeIntegrityUnlockModeInformation | Invalid | Invalid | Invalid |
+| SystemLeapSecondInformation | Valid | Valid | Invalid |
+| SystemFlags2Information | Valid | Valid | Invalid |
+| SystemSecurityModelInformation | Invalid | Valid | Invalid |
+| SystemCodeIntegritySyntheticCacheInformation | Invalid | Valid | Valid |
+| SystemFeatureConfigurationInformation | Valid | Invalid | Valid |
+| SystemFeatureConfigurationSectionInformation | Invalid | Invalid | Valid |
+| SystemFeatureUsageSubscriptionInformation | Valid | Invalid | Invalid |
+| SystemSecureSpeculationControlInformation | Invalid | Valid | Invalid |
+| SystemSpacesBootInformation | Invalid | Valid | Invalid |
+| SystemFwRamdiskInformation | Invalid | Valid | Invalid |
+| SystemWheaIpmiHardwareInformation | Invalid | Valid | Invalid |
+| SystemDifSetRuleClassInformation | Valid | Invalid | Invalid |
+| SystemDifClearRuleClassInformation | Valid | Invalid | Invalid |
+| SystemDifApplyPluginVerificationOnDriver | Valid | Invalid | Invalid |
+| SystemDifRemovePluginVerificationOnDriver | Valid | Invalid | Invalid |
+| SystemShadowStackInformation | Invalid | Valid | Invalid |
+| SystemBuildVersionInformation | Invalid | Invalid | Valid |
+| SystemPoolLimitInformation | Valid | Invalid | Valid |
+| SystemCodeIntegrityAddDynamicStore | Valid | Invalid | Invalid |
+| SystemCodeIntegrityClearDynamicStores | Valid | Invalid | Invalid |
+| SystemDifPoolTrackingInformation | Valid | Invalid | Invalid |
+| SystemPoolZeroingInformation | Invalid | Valid | Invalid |
+| SystemDpcWatchdogInformation | Valid | Valid | Invalid |peroff
+| SystemDpcWatchdogInformation2 | Valid | Valid | Invalid |
+| SystemSupportedProcessorArchitectures2 | Invalid | Valid | Valid |
+| SystemSingleProcessorRelationshipInformation | Invalid | Invalid | Valid |
+| SystemXfgCheckFailureInformation | Invalid | Valid | Valid |
+| SystemIommuStateInformation | Valid | Invalid | Invalid |
+| SystemHypervisorMinrootInformation | Invalid | Valid | Invalid |
+| SystemHypervisorBootPagesInformation | Valid | Invalid | Invalid |
+| SystemPointerAuthInformation | Invalid | Valid | Invalid |
+| SystemSecureKernelDebuggerInformation | Invalid | Valid | Invalid |
