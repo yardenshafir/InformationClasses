@@ -4,7 +4,7 @@ Documenting system information classes and their uses
 ## System Information classes support in NtSet vs. NtQuery APIs:
 
 | Information Class | NtSetSystemInformation  | NtQuerySystemInformation  | NtQuerySystemInformationEx |
-| ------- | --- | --- |
+| ------- | --- | --- | --- |
 | SystemBasicInformation | Invalid | Valid | Invalid |
 | SystemProcessorInformation | Invalid | Valid | Invalid |
 | SystemPerformanceInformation | Invalid | Valid | Invalid |
