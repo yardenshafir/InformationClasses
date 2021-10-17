@@ -233,7 +233,7 @@ Documenting system information classes and their uses
 | SystemCodeIntegrityClearDynamicStores | Valid | Invalid | Invalid | Yes | Yes | - |
 | SystemDifPoolTrackingInformation | Valid | Invalid | Invalid | Yes | Yes | SeDebugPrivilege |
 | SystemPoolZeroingInformation | Invalid | Valid | Invalid | Yes | Yes | - |
-| SystemDpcWatchdogInformation | Valid | Valid | Invalid |peroff
+| SystemDpcWatchdogInformation | Valid | Valid | Invalid | Yes | Yes | - |
 | SystemDpcWatchdogInformation2 | Valid | Valid | Invalid | Yes | Yes | - |
 | SystemSupportedProcessorArchitectures2 | Invalid | Valid | Valid | Yes | Yes | - |
 | SystemSingleProcessorRelationshipInformation | Invalid | Invalid | Valid | Yes | Yes | - |
