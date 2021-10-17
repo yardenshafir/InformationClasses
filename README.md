@@ -116,7 +116,7 @@ Documenting system information classes and their uses
 | SystemProcessorCycleTimeInformation | Invalid | Valid | Valid | Yes | Yes | - |
 | SystemStoreInformation | Valid | Valid | Invalid | Yes | Yes | SeProfileSingleProcessPrivilege |
 | SystemRegistryAppendString | Not implemented | Invalid | Invalid | Yes | Yes | - |
-| SystemAitSamplingValue | Valid | Invalid | Invalid | Yes | Yes | - |
+| SystemAitSamplingValue | Valid | Invalid | Invalid | Yes | Yes | SeProfileSingleProcessPrivilege |
 | SystemVhdBootInformation | Invalid | Valid | Invalid | Yes | Yes | - |
 | SystemCpuQuotaInformation | Valid | Valid | Invalid | Yes | Yes | SeIncreaseQuotaPrivilege |
 | SystemNativeBasicInformation | Invalid | Valid | Invalid | Yes | Yes | - |
@@ -132,12 +132,12 @@ Documenting system information classes and their uses
 | SystemQueryPerformanceCounterInformation | Invalid | Valid | Invalid | No | Yes | - |
 | SystemSessionBigPoolInformation | Invalid | Valid | Invalid | Yes | No | - |
 | SystemBootGraphicsInformation | Valid | Valid | Invalid | Yes | Yes | - |
-| SystemScrubPhysicalMemoryInformation | Valid | Invalid | Invalid | Yes | Yes | - |
+| SystemScrubPhysicalMemoryInformation | Valid | Invalid | Invalid | Yes | Yes | SeProfileSingleProcessPrivilege |
 | SystemBadPageInformation | Invalid | Valid | Invalid | Yes | Yes | - |
 | SystemProcessorProfileControlArea | Valid | Invalid | Invalid | Yes | Yes | - |
-| SystemCombinePhysicalMemoryInformation | Valid | Invalid | Invalid | Yes | Yes | - |
+| SystemCombinePhysicalMemoryInformation | Valid | Invalid | Invalid | Yes | Yes | SeProfileSingleProcessPrivilege |
 | SystemEntropyInterruptTimingInformation | Valid | Invalid | Invalid | Yes | Yes | - |
-| SystemConsoleInformation | Valid | Invalid | Invalid | Yes | Yes | - |
+| SystemConsoleInformation | Valid | Invalid | Invalid | Yes | Yes | SeLoadDriverPrivilege |
 | SystemPlatformBinaryInformation | Invalid | Valid | Invalid | Yes | Yes | SeTcbPrivilege |
 | SystemPolicyInformation | Valid | Valid | Invalid | Yes | Yes | - |
 | SystemHypervisorProcessorCountInformation | Invalid | Valid | Invalid | Yes | Yes | - |
@@ -147,7 +147,7 @@ Documenting system information classes and their uses
 | SystemMemoryChannelInformation | Invalid | Valid | Invalid | Yes | Yes | - |
 | SystemBootLogoInformation | Invalid | Valid | Invalid | Yes | Yes | - |
 | SystemProcessorPerformanceInformationEx | Invalid | Valid | Valid | Yes | Yes | - |
-| SystemCriticalProcessErrorLogInformation | Valid | Invalid | Invalid | Yes | Yes | - |
+| SystemCriticalProcessErrorLogInformation | Valid | Invalid | Invalid | Yes | Yes | SeShutdownPrivilege |
 | SystemSecureBootPolicyInformation | Invalid | Valid | Invalid | Yes | Yes | - |
 | SystemPageFileInformationEx | Invalid | Valid | Invalid | Yes | Yes | - |
 | SystemSecureBootInformation | Invalid | Valid | Invalid | Yes | Yes | - |
@@ -156,7 +156,7 @@ Documenting system information classes and their uses
 | SystemFullProcessInformation | Invalid | Valid | Invalid | Yes | Yes | - |
 | SystemKernelDebuggerInformationEx | Invalid | Valid | Invalid | Yes | Yes | - |
 | SystemBootMetadataInformation | Valid | Valid | Invalid | Yes | Yes | SeTcbPrivilege |
-| SystemSoftRebootInformation | Valid | Valid | Invalid | Yes | Yes | - |
+| SystemSoftRebootInformation | Valid | Valid | Invalid | Yes | Yes | SeShutdownPrivilege |
 | SystemElamCertificateInformation | Valid | Invalid | Invalid | Yes | Yes | - |
 | SystemOfflineDumpConfigInformation | Invalid | Valid | Invalid | Yes | Yes | - |
 | SystemProcessorFeaturesInformation | Invalid | Valid | Invalid | Yes | Yes | - |
@@ -182,7 +182,7 @@ Documenting system information classes and their uses
 | SystemRootSiloInformation | Invalid | Valid | Invalid | Yes | Yes | - |
 | SystemCpuSetInformation | Invalid | Valid | Valid | Yes | Yes | - |
 | SystemCpuSetTagInformation | Valid | Invalid | Invalid | Yes | Yes | - |
-| SystemWin32WerStartCallout | Valid | Invalid | Invalid | Yes | Yes | - |
+| SystemWin32WerStartCallout | Valid | Invalid | Invalid | Yes | Yes | SeTcbPrivilege |
 | SystemSecureKernelProfileInformation | Invalid | Valid | Valid | Yes | Yes | SeSystemProfilePrivilege |
 | SystemCodeIntegrityPlatformManifestInformation | Invalid | Valid | Invalid | Yes | Yes | - |
 | SystemInterruptSteeringInformation | Invalid | Invalid | Valid | Yes | Yes | - |
